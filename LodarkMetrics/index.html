@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lodark Metrics | SS Report</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo-section">
+                <img src="https://i.postimg.cc/j5JD1mcX/120bc63444dd8651b8fb0a7da238a4e5.webp" alt="Lodark">
+                <h1>Lodark SS Intelligence</h1>
+            </div>
+        </header>
+
+        <section class="stats-overview">
+            <div class="stat-card">
+                <h3>Total Calls</h3>
+                <div class="value">999</div>
+            </div>
+            <div class="stat-card">
+                <h3>Detections</h3>
+                <div class="value">76</div>
+            </div>
+            <div class="stat-card">
+                <h3>Operators</h3>
+                <div class="value">18</div>
+            </div>
+        </section>
+
+        <div class="metrics-grid">
+            <main>
+                <!-- Daily Item -->
+                <div class="day-card">
+                    <div class="day-header"><h2>01/05 — DAILY REPORT</h2></div>
+                    <div class="turnos-grid">
+                        <div class="turno-box"><div class="label">MADRUGADA</div><div class="val">59</div></div>
+                        <div class="turno-box"><div class="label">MANHÃ</div><div class="val">06</div></div>
+                        <div class="turno-box"><div class="label">TARDE</div><div class="val">45</div></div>
+                        <div class="turno-box"><div class="label">NOITE</div><div class="val">86</div></div>
+                    </div>
+                </div>
+
+                <div class="day-card">
+                    <div class="day-header"><h2>02/05 — DAILY REPORT</h2></div>
+                    <div class="turnos-grid">
+                        <div class="turno-box"><div class="label">MADRUGADA</div><div class="val">70</div></div>
+                        <div class="turno-box"><div class="label">MANHÃ</div><div class="val">12</div></div>
+                        <div class="turno-box"><div class="label">TARDE</div><div class="val">68</div></div>
+                        <div class="turno-box"><div class="label">NOITE</div><div class="val">72</div></div>
+                    </div>
+                </div>
+
+                <div class="day-card">
+                    <div class="day-header"><h2>03/05 — DAILY REPORT</h2></div>
+                    <div class="turnos-grid">
+                        <div class="turno-box"><div class="label">MADRUGADA</div><div class="val">58</div></div>
+                        <div class="turno-box"><div class="label">MANHÃ</div><div class="val">24</div></div>
+                        <div class="turno-box"><div class="label">TARDE</div><div class="val">60</div></div>
+                        <div class="turno-box"><div class="label">NOITE</div><div class="val">84</div></div>
+                    </div>
+                </div>
+
+                <div class="day-card">
+                    <div class="day-header"><h2>04/05 — DAILY REPORT</h2></div>
+                    <div class="turnos-grid">
+                        <div class="turno-box"><div class="label">MADRUGADA</div><div class="val">38</div></div>
+                        <div class="turno-box"><div class="label">MANHÃ</div><div class="val">11</div></div>
+                        <div class="turno-box"><div class="label">TARDE</div><div class="val">50</div></div>
+                        <div class="turno-box"><div class="label">NOITE</div><div class="val">85</div></div>
+                    </div>
+                </div>
+
+                <div class="day-card">
+                    <div class="day-header"><h2>05/05 — DAILY REPORT</h2></div>
+                    <div class="turnos-grid">
+                        <div class="turno-box"><div class="label">MADRUGADA</div><div class="val">43</div></div>
+                        <div class="turno-box"><div class="label">MANHÃ</div><div class="val">11</div></div>
+                        <div class="turno-box"><div class="label">TARDE</div><div class="val">45</div></div>
+                        <div class="turno-box"><div class="label">NOITE</div><div class="val">71</div></div>
+                    </div>
+                </div>
+            </main>
+
+            <aside class="efficiency-panel">
+                <div class="circle-chart">
+                    <svg width="160" height="160" style="transform: rotate(-90deg)">
+                        <circle cx="80" cy="80" r="75" stroke="rgba(255,255,255,0.05)" stroke-width="2" fill="none"></circle>
+                        <circle cx="80" cy="80" r="75" stroke="#60a5fa" stroke-width="2" fill="none" stroke-dasharray="471" stroke-dashoffset="400"></circle>
+                    </svg>
+                    <div class="percentage" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%)">8.2%</div>
+                </div>
+
+                <div class="staffing-info">
+                    <div class="staff-row"><span>MOBILE STAFF</span><span>12 UNIT</span></div>
+                    <div class="staff-row"><span>EMULATOR STAFF</span><span>06 UNIT</span></div>
+                    <div class="staff-row" style="margin-top: 40px; border: none; color: #ef4444">
+                        <span>OPERATIONAL OVERLOAD DETECTED</span>
+                    </div>
+                    <p style="font-size: 0.7rem; line-height: 1.8; color: var(--text-secondary); margin-top: 10px;">
+                        Current demand of 200+ daily calls exceeds the logistical limit of the 18-member team. Expansion is required to maintain forensic integrity.
+                    </p>
+                </div>
+            </aside>
+        </div>
+
+        <footer>
+            LODARK DIR SS SYSTEM — INTERNAL REPORT
+        </footer>
+    </div>
+</body>
+</html>
