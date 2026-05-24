@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samuca | Desenvolvedor & Especialista em Screen Share</title>
+    <meta name="description" content="Samuca é um desenvolvedor especialista em Anti-Cheat e Screen Share. Conheça sua trajetória e projetos na Team Lodark.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Outfit:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Cursor Customizado -->
+    <div class="custom-cursor"></div>
+    <div class="custom-cursor-follower"></div>
+
+    <canvas id="particles-bg"></canvas>
+    
+    <div class="bg-glow"></div>
+    <div class="bg-glow bg-glow-2"></div>
+    
+    <main class="container">
+        <header class="hero">
+            <div class="hero-badge">
+                <span class="pulse-dot"></span>
+                Segurança & Anti-Cheat
+            </div>
+            <h1 class="hero-title">
+                Muito prazer,<br> 
+                <span class="gradient-text glitch-hover">o Samuca sou eu.</span>
+            </h1>
+            <div class="hero-subtitle-container">
+                <span id="typed-text" class="hero-subtitle"></span><span class="cursor"></span>
+            </div>
+            
+            <div class="bible-verse slide-up">
+                "Tudo posso naquele que me fortalece." <span class="verse-ref">— Filipenses 4:13</span>
+            </div>
+        </header>
+
+        <section class="accordion slide-up delay-1">
+            <div class="accordion-item">
+                <button class="accordion-header">
+                    <h2>Quem é Samuca?</h2>
+                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                </button>
+                <div class="accordion-content">
+                    <div class="accordion-inner">
+                        <div class="accordion-inner-content">
+                            <p>Movido por grandes propósitos, Samuca estuda e trabalha diariamente para se tornar uma das maiores referências em desenvolvimento de Anti-Cheat (AC) e o especialista em Screen Share (SS) mais respeitado do Brasil.</p>
+                            <p>Com apenas 15 anos e domínio de métodos privados, ele transita com facilidade pelo desenvolvimento de software de baixo nível e web, dominando tecnologias como C#, C++, Python e Web Development. Seu foco principal é a criação de Scanners e ferramentas avançadas de análise forense de sistema.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-header">
+                    <h2>Onde ele atua?</h2>
+                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                </button>
+                <div class="accordion-content">
+                    <div class="accordion-inner">
+                        <div class="accordion-inner-content">
+                            <p>Atualmente, Samuca lidera o desenvolvimento e a pesquisa de segurança na <strong>Team Lodark</strong>, codando scanners proprietários, ferramentas de análise e estruturando soluções inovadoras para a comunidade.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-header">
+                    <h2>A Trajetória</h2>
+                    <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                </button>
+                <div class="accordion-content">
+                    <div class="accordion-inner">
+                        <div class="accordion-inner-content">
+                            <p>Tudo começou no cenário de FiveM, onde Samuca deu seus primeiros passos aprendendo a analisar sistemas de forma avançada com o Lodark e o mano Gringo — duas das maiores referências do Brasil que ensinaram ele a telar. Com o tempo, a parceria entre Lodark e Samuca se estreitou, levando a expertise deles para o cenário de Free Fire, sempre em uma busca implacável por novos métodos e brechas de segurança.</p>
+                            <p>Após um período focado exclusivamente na área de Bypass — onde adquiriu uma bagagem absurda sobre o funcionamento interno das trapaças —, Samuca retornou com foco total para a engenharia de Screen Share. Esse conhecimento foi a base para o desenvolvimento do Lodark AC.</p>
+                            <p>Hoje, o trio original está de volta: Gringo, Lodark e Samuca unem forças novamente na <strong>Team Lodark</strong>, com o objetivo claro de consolidar a equipe como a maior e mais eficiente em SS do mercado.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="cta-section slide-up delay-2">
+            <h2 class="cta-title">Vamos conversar?</h2>
+            <p class="cta-subtitle">Quer entender o meu fluxo de trabalho ou conhecer as soluções da nossa equipe?</p>
+            
+            <a href="https://discord.gg/RnANWbrPyQ" target="_blank" rel="noopener noreferrer" class="discord-btn">
+                <span>Entrar no Discord</span>
+            </a>
+        </footer>
+    </main>
+
+    <script src="particles.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Typing effect
+            const textToType = "Desenvolvedor de 15 anos, especialista em segurança defensiva e Screen Share.";
+            const subtitleEl = document.getElementById("typed-text");
+            let i = 0;
+            
+            function typeWriter() {
+                if (i < textToType.length) {
+                    subtitleEl.innerHTML += textToType.charAt(i);
+                    i++;
+                    const speed = Math.random() * 30 + 20; 
+                    setTimeout(typeWriter, speed);
+                }
+            }
+            setTimeout(typeWriter, 800);
+
+            // Accordion logic
+            const headers = document.querySelectorAll('.accordion-header');
+            headers.forEach(header => {
+                header.addEventListener('click', () => {
+                    const item = header.parentElement;
+                    const isActive = item.classList.contains('active');
+                    
+                    document.querySelectorAll('.accordion-item').forEach(accItem => {
+                        accItem.classList.remove('active');
+                    });
+                    
+                    if (!isActive) {
+                        item.classList.add('active');
+                    }
+                });
+            });
+
+            // Custom Cursor Logic
+            const cursor = document.querySelector('.custom-cursor');
+            const follower = document.querySelector('.custom-cursor-follower');
+            
+            let mouseX = window.innerWidth / 2;
+            let mouseY = window.innerHeight / 2;
+            let followerX = window.innerWidth / 2;
+            let followerY = window.innerHeight / 2;
+            
+            document.addEventListener('mousemove', (e) => {
+                mouseX = e.clientX;
+                mouseY = e.clientY;
+                
+                cursor.style.left = mouseX + 'px';
+                cursor.style.top = mouseY + 'px';
+            });
+            
+            function animateCursor() {
+                // Smooth interpolation for the follower ring
+                followerX += (mouseX - followerX) * 0.15;
+                followerY += (mouseY - followerY) * 0.15;
+                
+                follower.style.left = followerX + 'px';
+                follower.style.top = followerY + 'px';
+                
+                requestAnimationFrame(animateCursor);
+            }
+            animateCursor();
+            
+            // Hover states for cursor
+            const clickables = document.querySelectorAll('a, button, .accordion-header, .hero-badge');
+            clickables.forEach(el => {
+                el.addEventListener('mouseenter', () => {
+                    cursor.classList.add('hover');
+                    follower.classList.add('hover');
+                });
+                el.addEventListener('mouseleave', () => {
+                    cursor.classList.remove('hover');
+                    follower.classList.remove('hover');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
